@@ -135,6 +135,7 @@ li:last-child {
   .nav {
     transition: 0.3s ease;
     display: none;
+    max-width: 1800px;
   }
 
   .nav ul {
@@ -299,6 +300,7 @@ button.arrow {
 .container{
   margin: 0 auto;
   padding: 10% 7%;
+  max-width: 1800px;
 }
 
 
@@ -719,7 +721,7 @@ footer.container {
 
 
 /* Extra Large */
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1280px) {
   .container {
     padding: 5% 10%;
   }
@@ -735,30 +737,6 @@ footer.container {
     background-size: 65%;
   }
   }
-
-
-  /* ----About Us---- */
-
-  /* .about-us {
-    position: relative;
-    width: 50%;
-  
-    left: 40%;
-  } */
-
-
-  /* ----Food Menu Section---- */
-  /* .food-menu {
-    text-align: center;
-  } */
-
-
-
-
-
-
-  /*---- Testmonial Section ----*/
-
 
 }
 /******************************************
