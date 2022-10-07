@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Your description goes here">
+		<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Restaurant</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://kit.fontawesome.com/31073337d6.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<main class="container">
+			<header>
+				<div id="menu">
+					<div id="menu-bar" onclick="menuOnClick()">
+						<div id="bar1" class="bar"></div>
+						<div id="bar2" class="bar"></div>
+						<div id="bar3" class="bar"></div>
+					</div>
+					<nav class="nav" id="nav">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Menu</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">Location</a></li>
+							<li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="menu-bg" id="menu-bg"></div>
+			</header>
+	
+			<section class="landing">
+				<h1>Welcome<br>To Our Cuisine<br>Restaurant</h1>
+				<div class="fg--search">
+					<form class="direction" action="">
+						<input type="search" placeholder="Search here" class="search-here">
+						<button>Location  <i class="fa-solid fa-caret-down"></i></button>
+					</form>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#"><i class="fa-brands fa-facebook-f"></i> 25.2k</a></li>
+						<li><a href="#"><i class="fa-brands fa-twitter"></i> 62k</a></li>
+						<li><a href="#"><i class="fa-brands fa-instagram"></i> 55k</a></li>
+					</ul>
+					
+					
+					
+				</nav>
+			</section>
+		
+		</main>
+
+	<section class="about-us container">
+		<section>
+			<h3>About Us</h3>
+			<h2>Discover Our Restaurant Story</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, doloremque voluptatem. Error reiciendis libero natus illo esse. Sint rem nisi excepturi? Optio mollitia saepe quae autem. Quam magnam obcaecati quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, illo ipsum? Perferendis ipsa deserunt, aspernatur id sint distinctio pariatur ut illo ipsum laudantium, error velit necessitatibus, aut corrupti nulla exercitationem.</p>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi neque nihil veniam ipsum amet dolorum iure eius recusandae sunt natus molestiae dolorem, repudiandae laboriosam quae. Repudiandae amet deserunt magni velit.</p>
+			<button class="btn dis-menu">Discover Menu</button><button class="arrow"><i class="fa-solid fa-right-long"></i></button>
+		</section>
+	</section>
+
+	<section class="food-menu container">
+		<h3>Order Online New</h3>
+		<h2>Our Speciality Cuisine</h2>
+		<input type="radio" id="breakfast-toggle" name="menu" checked hidden>
+		<input type="radio" id="lunch-toggle" name="menu" hidden>
+		<input type="radio" id="dinner-toggle" name="menu" hidden>
+		<input type="radio" id="dessert-toggle" name="menu" hidden>
+		<input type="radio" id="shake-toggle" name="menu" hidden>
+		<nav>
+			<ul>
+				
+					<label for="breakfast-toggle">Breakfast</label><label for=lunch-toggle>Lunch</label><label for=dinner-toggle>Dinner</label><label for=dessert-toggle>Dessert</label><label for=shake-toggle>Shake</label>
+			</ul>
+		</nav>
+		<section class="flex" id="breakfast">
+			<div class="img-hover">
+				<img src="./assets/menu/bk1.jpg" class="image" alt="">
+				<div class="overlay">
+					<div class="text">breakfast</div>
+				</div>
+			</div>
+			<div class="img-hover">
+				<img src="./assets/menu/bk2.jpg" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dish name</div>
+				</div>
+			</div>
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=breakfast" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dish name</div>
+				</div>
+			</div>
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=breakfast" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dish name</div>
+				</div>
+			</div>
+		</section>
+		<section class="flex" id="lunch">
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=lunch" class="image" alt="">
+				<div class="overlay">
+					<div class="text">lunch</div>
+				</div>
+			</div>
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=lunch" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dish name</div>
+				</div>
+			</div>
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=lunch" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dish name</div>
+				</div>
+			</div>
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=lunch" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dish name</div>
+				</div>
+			</div>
+		</section>
+		<section class="flex" id="dinner">
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=dinner" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dinner</div>
+				</div>
+			</div>
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=dinner" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dish name</div>
+				</div>
+			</div>
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=dinner" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dish name</div>
+				</div>
+			</div>
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=dinner" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dish name</div>
+				</div>
+			</div>
+		</section>
+		<section class="flex" id="dessert">
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=dessert" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dessert</div>
+				</div>
+			</div>
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=dessert" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dish name</div>
+				</div>
+			</div>
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=dessert" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dish name</div>
+				</div>
+			</div>
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=dessert" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dish name</div>
+				</div>
+			</div>
+		</section>
+		<section class="flex" id="shake">
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=shake" class="image" alt="">
+				<div class="overlay">
+					<div class="text">shake</div>
+				</div>
+			</div>
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=shake" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dish name</div>
+				</div>
+			</div>
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=shake" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dish name</div>
+				</div>
+			</div>
+			<div class="img-hover">
+				<img src="http://fakeimg.pl/150x250/?text=shake" class="image" alt="">
+				<div class="overlay">
+					<div class="text">dish name</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<section class="hours container">
+		<h3>Book Table</h3>
+		<h2>Opening Hours</h2>
+		<div><i class="fa-solid fa-phone"></i></div>
+		<h4>Call Now</h4>
+		<span class="phone-number">+12345 678 910</span>
+		<section>
+			<div>
+				<h4>Monday to Tuesday</h4>
+				<span>09:00 am - 22:00 pm</span>
+			</div>
+			<br>
+			<div>
+				<h4>Friday to Sunday</h4>
+				<span>11:00 am - 22:00 pm</span>
+			</div>
+		</section>
+		<div class="carousel">
+			<div class="carousel-inner">
+					<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+					<div class="carousel-item item1">
+							<!-- <img src="./assets/menu/bk4.jpg"> -->
+					</div>
+					<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+					<div class="carousel-item item2">
+							<!-- <img src="http://fakeimg.pl/2000x800/DA5930/fff/?text=JavaScript"> -->
+					</div>
+					<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+					<div class="carousel-item item3">
+							<!-- <img src="http://fakeimg.pl/2000x800/F90/fff/?text=Carousel"> -->
+					</div>
+					<label for="carousel-3" class="carousel-control prev control-1">‹</label>
+					<label for="carousel-2" class="carousel-control next control-1">›</label>
+					<label for="carousel-1" class="carousel-control prev control-2">‹</label>
+					<label for="carousel-3" class="carousel-control next control-2">›</label>
+					<label for="carousel-2" class="carousel-control prev control-3">‹</label>
+					<label for="carousel-1" class="carousel-control next control-3">›</label>
+					<ol class="carousel-indicators">
+							<li>
+									<label for="carousel-1" class="carousel-bullet">•</label>
+							</li>
+							<li>
+									<label for="carousel-2" class="carousel-bullet">•</label>
+							</li>
+							<li>
+									<label for="carousel-3" class="carousel-bullet">•</label>
+							</li>
+					</ol>
+			</div>
+	</div>
+	</section>
+	<section class="ppl-say container">
+		<h3>Testmonials</h3>
+		<h2>Customer Say</h2>
+		<div>
+
+			<div>
+				<img src="http://placekitten.com/g/60/60" alt="someone's head">
+			</div>
+
+		</div>
+		<h5 class="name">Mr Kitten Moew</h5>
+		<h6 class="title">Scratch Master</h6>
+		<span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur corporis consequuntur hic excepturi omnis deleniti id laudantium quis praesentium voluptatum commodi optio explicabo, sequi reiciendis harum repellat amet, quidem qui.</p>
+	</section>
+	<footer class="container">
+		<div>
+
+			<ul class="copyright">
+				<li>&copy; CHRISTINE HSIAO</li>
+				<li>Design: <a href="https://dribbble.com/shots/12927498-Cuisine-Restaurant-Website">Mithun Ray</a></li>
+			</ul>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

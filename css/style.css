@@ -1,0 +1,767 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: 400;
+  background: white;
+}
+
+/*
+  ============================================
+  Typography
+  ============================================
+*/
+html {
+  font-size: 100%;
+}
+h1, h2 {
+  font-family: 'Yeseva One', cursive;
+}
+
+h1 {
+  font-size: 2.75rem;
+  line-height: 1.25em;
+}
+
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25em;
+  line-height: 1.25em;
+}
+
+h3 {
+  font-size: 1rem;
+  margin-bottom: 1.1em;
+  line-height: 1.25em;
+  color: orange;
+}
+h4, h5 {
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+h6 {
+  font-size: 0.75rem;
+}
+p {
+  margin-bottom: 1.25em;
+  line-height: 1.5em;
+
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+nav {
+  margin-bottom: 1em;
+}
+
+li {
+  margin-right: 20px;
+  display: inline-block;
+}
+li:last-child {
+  margin-right: 0;
+}
+.landing nav {
+  text-align: left;
+}
+.food-menu nav{
+  text-align: center;
+}
+
+/* Hamburger Menu */
+  #menu {
+    z-index: 2;
+  }
+
+  #menu-bar {
+    width: 2em;
+    height: 2.5em;
+    margin: 1.5em 1em;
+    cursor: pointer;
+    position: fixed;
+  }
+
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: rgba(255, 166, 0, 0.487);
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  #bar1 {
+    transform: translateY(-4px);
+  }
+
+  #bar3 {
+    transform: translateY(4px);
+  }
+
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+
+  .nav ul {
+    padding: 0 22px;
+  }
+
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    border-bottom: dotted 2px transparent;
+  }
+
+  .nav li a:hover {
+    border-bottom: dotted 2px white;
+  }
+
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, orange, rgba(255, 179, 0, 0.7));
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+
+  .change {
+    display: block;
+    margin-top: 5.6em;
+    position: fixed;
+  }
+
+  .change .bar {
+    background-color: white;
+  }
+
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+
+  .change #bar2 {
+    opacity: 0;
+  }
+
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+
+  .change-bg {
+    width: 32em;
+    height: 40em;
+    transform: translate(-60%,-30%);
+    position: fixed;
+  }
+
+/*
+  ========================================
+  Links style
+  ========================================
+*/
+a, li {
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+.landing nav i {
+  color: orange;
+}
+
+/*
+  ============================================
+  Buttons and Input
+  ============================================
+*/
+button {
+  background: orange;
+  border: solid 3px transparent;
+  color: white;
+  border: none;
+  font-size: 14px;
+  padding: 0.7rem;
+  cursor: pointer;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Directory search */
+div.fg--search {
+  margin: 1.5rem 0;
+}
+
+form.direction {
+  right: 0;
+  display: flex;
+  border-radius: 5px 0 0 5px;
+  margin: 0 0;
+  display: flex;
+}
+
+input.search-here {
+  background-image: url("../assets/magnifying-glass-solid.svg");
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  caret-color: orange;
+  flex-grow: 4;
+}
+input[type="search"] {
+  border: none;
+  margin: 0;
+  padding-left: 30px;
+  color: inherit;
+  border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+  color: grey;
+}
+
+input[type="search"]:focus {
+  box-shadow: 5px 5px 30px #606771;
+  border-color: #3f69a8;
+  outline: none;
+}
+
+.direction button {
+  border-radius: 0 5px 5px 0;
+}
+
+/* Arrow button at the About Us section */
+button.arrow {
+  background-color: rgb(253, 202, 107);
+  border-radius: 0 5px 5px 0;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+.container{
+  margin: 0 auto;
+  padding: 10% 7%;
+}
+
+
+/*
+  ============================================
+  Main
+  ============================================
+*/
+
+main {
+  background-image: url(../assets/restaurant_landing.jpg);
+  background-position: 65% 15%;
+  background-size: 200%;
+  background-repeat: no-repeat;
+}
+
+.landing{
+  margin-top: 4em;
+}
+
+/*
+  ============================================
+  Food Menu
+  ============================================
+*/
+
+.food-menu,
+.ppl-say {
+  background-color: #E9F1F4;
+
+}
+.food-menu nav {
+  margin: 1.25em 0;
+}
+.food-menu ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.food-menu label {
+  padding: 0.5em 2%;
+  border-bottom: solid 1px grey;
+}
+.food-menu label:hover {
+  color: orange;
+  border-bottom: solid 1px orange;
+}
+
+#breakfast-toggle:not(:checked) ~ #breakfast,
+#lunch-toggle:not(:checked) ~ #lunch,
+#dinner-toggle:not(:checked) ~ #dinner,
+#dessert-toggle:not(:checked) ~ #dessert,
+#shake-toggle:not(:checked) ~ #shake {
+  display: none;
+}
+#breakfast-toggle:checked ~ nav label[for=breakfast-toggle],
+#lunch-toggle:checked ~ nav label[for=lunch-toggle],
+#dinner-toggle:checked ~ nav label[for=dinner-toggle],
+#dessert-toggle:checked ~ nav label[for=dessert-toggle],
+#shake-toggle:checked ~ nav label[for=shake-toggle] {
+  color: orange;
+  border-bottom: solid 1px orange;
+}
+
+/* Menu Image */
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1.5em 1em;
+}
+.img-hover {
+  position: relative;
+
+}
+.image {
+  display: block;
+  width: 150px;
+  height: 250px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.img-hover:hover .overlay {
+  opacity: 0.65;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*
+  ============================================
+  Store Hours
+  ============================================
+*/
+
+.hours {
+  text-align: center;
+}
+.hours i {
+  padding: 0.5em;
+  color: orange;
+  border: 2px solid orange;
+  border-radius: 50%;
+}
+.phone-number {
+  font-size: 1.5rem;
+  color: orange;
+
+}
+.hours section {
+  margin: 1rem 0;
+}
+
+/* Image Carousel */
+.carousel {
+  position: relative;
+  /* box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64); */
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 12em;
+}
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+
+.carousel-item {
+  position: absolute;
+  padding: auto;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+  display: block;
+  height: 100%;
+}
+.item1 {
+  width: 100%;
+  background: no-repeat center/80% url(../assets/menu/bk4.jpg);
+}
+.item2 {
+  width: 100%;
+  background: no-repeat center/80% url(../assets/menu/bk3.jpg);
+}
+.item3 {
+  width: 100%;
+  background: no-repeat center/80% url(../assets/menu/dinner1.jpg);
+}
+/* .carousel-item img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+} */
+
+.carousel-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 2%;
+}
+
+.carousel-control.next {
+  right: 2%;
+}
+
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+  display: block;
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel-bullet {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.carousel-bullet:hover {
+  color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+  color: orange;
+  font-weight: bold;
+}
+
+#title {
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 27px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Open Sans', sans-serif;
+  z-index: 9999;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+/*
+  ============================================
+  Customer Reviews
+  ============================================
+*/
+
+.name {
+  font-weight: bold;
+
+}
+.title {
+  color: grey;
+}
+.stars {
+  display: block;
+  color: orange;
+  padding: 0.75em;
+}
+.ppl-say img {
+  border-radius: 50%;
+}
+/*
+  ============================================
+  Footer
+  ============================================
+*/
+footer.container {
+  text-align: center;
+  padding: 1.5%;
+  background-color: rgba(237, 234, 234, 0.946);
+}
+/*
+  ============================================
+  Media Queries
+  ============================================
+*/
+/* XSmall */
+  body > section{
+    text-align: center;
+  }
+
+/* Small */
+	@media screen and (min-width: 480px) {
+    /* Basic */
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+    main {
+      background-position: 65% 15%;
+      background-size: 175%;
+    }
+    .landing {
+      padding-right: 20%;
+    }
+    .carousel-inner {
+      height: 33vh;
+    }
+	}
+
+  /* Medium */
+
+	@media screen and (min-width: 736px){
+    .container {
+      padding: 6% 7%;
+    }
+    main {
+      background-size: 150%;
+    }
+    .landing {
+      padding-right: 30%;
+    }
+    .hours > section {
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 1.5em;
+    }
+    .carousel-inner {
+      height: 47vh;
+    }
+  }
+
+
+/* large */
+
+  @media screen and (min-width: 980px) {
+    .container {
+      padding: 3% 8%;
+    }
+    main {
+      height: 100vh;
+      background-position: 50% 0;
+      background-size: 100%;
+    }
+    #menu-bar {
+      display: none;
+    }
+    #menu{
+      right: 0;
+    }
+    .nav {
+      display: block;
+      text-align: right;
+    }
+    .nav ul {
+      padding: 0 5%;
+    }
+    .nav li {
+      display: inline-block;
+      margin: 0 1.25em;
+    }
+    .nav li a {
+      color: black;
+    }
+    .nav li a:hover {
+      color: orange;
+      border-color: transparent;
+    }
+    h1 {
+      font-size: 3.5em;
+    }
+    .about-us {
+      background-image: url(../assets/about-us-left.jpg);
+      background-position: -50% 70%;
+      background-size: 65%;
+      background-repeat: no-repeat;
+    
+    }
+    .about-us section {
+      margin: 0 5% 0 35%;
+      text-align: left;
+      background-color: rgba(237, 234, 234, 0.946);
+      padding: 2em;
+      border-radius: 30px;
+      box-shadow: -5px 2px 120px 150px rgba(236, 234, 234, 0.95);
+    }
+
+    .carousel-inner {
+      height: 60vh;
+    }
+    
+
+    /* ----Main Section---- */
+
+
+/* Extra Large */
+  @media screen and (min-width: 1280px){
+  .container {
+    padding: 5% 10%;
+  }
+  .landing {
+    padding-right: 35%;
+    padding-left: 5%;
+  }
+  h1 {
+    font-size: 3.75em;
+  }
+  .about-us {
+    background-position: -50% 50%;
+    background-size: 65%;
+  }
+  }
+
+
+  /* ----About Us---- */
+
+  /* .about-us {
+    position: relative;
+    width: 50%;
+  
+    left: 40%;
+  } */
+
+
+  /* ----Food Menu Section---- */
+  /* .food-menu {
+    text-align: center;
+  } */
+
+
+
+
+
+
+  /*---- Testmonial Section ----*/
+
+
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
