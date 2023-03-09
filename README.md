@@ -4,6 +4,8 @@ A simple responsive website built with mobile first approach, using vanilla html
 
 **Link to project:** https://neuroleptique.github.io/Restaurant-website/
 
+![full screen and mobile view of this project](https://github.com/Neuroleptique/Restaurant-website/blob/main/assets/resto.png)
+
 ## How It's Made:
 **Tech used:** HTML, CSS, JavaScript 
 
