@@ -722,30 +722,33 @@ footer.container {
     .carousel-inner {
       height: 60vh;
     }
-
-
+    .ppl-say p {
+      padding: 0 20%;
+    }
+  }
     /* ----Main Section---- */
 
 
 /* Extra Large */
   @media screen and (min-width: 1280px) {
-  .container {
-    padding: 5% 10%;
-  }
-  .landing {
-    padding-right: 35%;
-    padding-left: 5%;
-  }
-  h1 {
-    font-size: 3.75em;
-  }
-  .about-us {
-    background-position: -50% 50%;
-    background-size: 65%;
-  }
+    .container {
+      padding: 5% 10%;
+    }
+    .landing {
+      padding-right: 35%;
+      padding-left: 5%;
+    }
+    h1 {
+      font-size: 3.75em;
+    }
+    .about-us {
+      background-position: -50% 50%;
+      background-size: 65%;
+    }
+
   }
 
-}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
